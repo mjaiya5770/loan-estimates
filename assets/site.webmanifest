@@ -1,7 +1,7 @@
 {
-  "name": "Loan Estimates \u2014 Free Online Calculators",
+  "name": "Loan Estimates — Free Online Calculators",
   "short_name": "Loan Estimates",
-  "description": "Loan Estimates gives you the payment, the total interest and the payoff date on any loan in seconds \u2014 mortgage, auto, personal and business borrowing snapshots, plus the full 154-calculator library. Free, no signup, no lead forms.",
+  "description": "Loan Estimates gives you the payment, the total interest and the payoff date on any loan in seconds — mortgage, auto, personal and business borrowing snapshots, plus the full 154-calculator library. Free, no signup, no lead forms.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -17,6 +17,12 @@
       "src": "/assets/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
