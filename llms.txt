@@ -1,15 +1,15 @@
 # Loan Estimates
 
-Loan Estimates is a free online calculator site for fast borrowing answers — mortgage and loan payment estimates, affordability snapshots, total interest and payoff dates — plus the full library of 154 calculators. Every figure is an estimate, not a loan offer or financial advice.
+Loan Estimates is a free online calculator site for fast borrowing answers — mortgage and loan payment estimates, affordability snapshots, total interest and payoff dates — plus the full library of 176 calculators. Every figure is an estimate, not a loan offer or financial advice.
 
 Made for home buyers, car buyers and borrowers who want the payment and the total cost before they talk to a lender.
 
-All 154 calculators are free, with no account or sign-up. Every calculator shows its formula or method and at least one worked example.
+All 176 calculators are free, with no account or sign-up. Every calculator shows its formula or method and at least one worked example.
 
 ## Key pages
 
-- [Home](https://loanestimates.site/): all 154 calculators, organized by category.
-- [Embed these calculators](https://loanestimates.site/embed.html): put any of the 154 Loan Estimates calculators on your own site for free — no account, no attribution required.
+- [Home](https://loanestimates.site/): all 176 calculators, organized by category.
+- [Embed these calculators](https://loanestimates.site/embed.html): put any of the 176 Loan Estimates calculators on your own site for free — no account, no attribution required.
 - [Partnerships](https://loanestimates.site/partnerships.html): the network Loan Estimates belongs to, and how to partner with us.
 - [Creator ROI Hub — Earnings, Sponsorship & Fee Calculators](https://loanestimates.site/creator-roi-calculators.html): The Creator ROI Hub: free calculators for people who publish for a living — YouTube and TikTok earnings, sponsorship rates, payment fees and AI API costs, with honest ranges and the math shown.
 - [Amortization, Explained: Where Your Payment Actually Goes](https://loanestimates.site/guides/amortization-explained.html)
@@ -27,13 +27,14 @@ All 154 calculators are free, with no account or sign-up. Every calculator shows
 - [Loan Calculator — Solve for Payment, Amount, Term or Rate](https://loanestimates.site/tools/loan-calculator.html)
 - [Home Affordability Calculator — How Much House Can I Afford?](https://loanestimates.site/tools/home-affordability-calculator.html)
 
-## All calculators (2 owned of 154/158 — one-owner rule)
+## All calculators (3 owned of 176/180 — one-owner rule)
 
 ### Debt & money tools
 - [Loan Calculator — Solve for Payment, Amount, Term or Rate](https://loanestimates.site/tools/loan-calculator.html)
 
 ### Real estate investor tools
 - [Home Affordability Calculator — How Much House Can I Afford?](https://loanestimates.site/tools/home-affordability-calculator.html)
+- [Rent Affordability Calculator — 28%, 30% & 28/36 Rules, Debts-Aware](https://loanestimates.site/tools/rent-affordability-calculator.html)
 
 ### Everyday tools
 
