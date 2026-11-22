@@ -103,7 +103,7 @@
 }
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8058544460943611" crossorigin="anonymous"></script>
-<!-- NN-EMBED --><script>if(/[?&]embed=1(&|$)/.test(window.location.search))document.documentElement.classList.add("nn-embed");</script>
+<!-- NN-EMBED -->
 </head>
 <body>
 <header class="site-header">
@@ -119,42 +119,14 @@
   <h1 class="tool-title">Home Affordability Calculator</h1>
   <p class="lede">Enter your income, debts, down payment and rate — we'll apply the classic 28/36 rule to find the maximum home price you can comfortably afford.</p>
   <div class="nn-answer"><strong>The short answer:</strong> on $90,000 a year ($7,500 a month), the 28/36 rule caps your housing payment at <strong>$2,100 a month</strong> — the 28% front-end cap ($2,100) is lower than the 36% back-end cap minus $400 of monthly debts ($2,300), and the lower cap wins. That payment cap, your down payment and the rate set your maximum home price below.</div>
+   <div class="card nn-use-cta">
+     <h2>Use the Home Affordability Calculator</h2>
+     <p>The calculator itself lives on the landing page — open it there and it is ready in the module, sized to fit your screen with no scrolling through a long page to find the form.</p>
+     <p><a class="btn" href="../index.html?use=tools/home-affordability-calculator.html">Open the Home Affordability Calculator &rarr;</a></p>
+   </div>
+   
 
-  <div class="card nn-calc-card">
-    <div class="row">
-      <div class="field"><label for="inc">Gross annual income ($)</label><input id="inc" type="number" value="100000" min="0"></div>
-      <div class="field"><label for="debt">Monthly debts ($)</label><input id="debt" type="number" value="500" min="0"><div class="hint">Car, student, credit card minimums.</div></div>
-    </div>
-    <div class="row">
-      <div class="field"><label for="down">Down payment ($)</label><input id="down" type="number" value="60000" min="0"></div>
-      <div class="field"><label for="rate">Interest rate (% / yr)</label><input id="rate" type="number" value="6.5" step="0.01" min="0"></div>
-    </div>
-    <div class="row">
-      <div class="field"><label for="term">Loan term (years)</label><select id="term"><option>30</option><option>20</option><option>15</option></select></div>
-      <div class="field"><label for="ti">Tax + insurance ($ / yr)</label><input id="ti" type="number" value="6000" min="0"><div class="hint">Annual property tax + insurance.</div></div>
-    </div>
-    <button class="btn" onclick="calc()">Calculate affordability</button>
-    <div class="nn-actions no-print" data-nn-actions>
-  <button type="button" class="nn-btn" data-nn="share">🔗 Copy link to this result</button>
-  <button type="button" class="nn-btn" data-nn="copy">📋 Copy result</button>
-  <button type="button" class="nn-btn" data-nn="save">💾 Save this calculation</button>
-  <button type="button" class="nn-btn" data-nn="print">🖨️ Print / Save PDF</button>
-</div>
-<div class="nn-saves no-print" id="nnSavesPanel" hidden></div>
-<p class="nn-embed-link no-print"><a href="../embed.html#home-affordability-calculator">Embed this calculator on your site — free</a></p>
-<div class="results" id="results">
-      <div style="color:var(--muted);font-size:.9rem">Maximum home price</div>
-      <div id="verdict" style="font-weight:700;font-size:1.02rem;margin:2px 0 6px"></div>
-      <div class="big" id="rPrice">$0</div>
-      <table>
-        <tr><td>Max monthly housing payment</td><td id="rPay">$0</td></tr>
-        <tr><td>Limiting rule</td><td id="rRule">—</td></tr>
-        <tr><td>Loan amount</td><td id="rLoan">$0</td></tr>
-        <tr><td>Down payment</td><td id="rDown">$0</td></tr>
-      </table>
-    <div class="nn-signature" data-nn-signature><div class="nn-sig-body"></div></div>
-    </div>
-  </div>
+  
 <div class="nn-ad" data-key="880492cdc7920a95973ba7a1f19cec1b" data-w="300" data-h="250"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Loan Estimates — your loan answer in seconds</strong><span>Payments, affordability &amp; payoff snapshots. No signup, ever →</span></a></div>
 
   <div class="card">
@@ -211,7 +183,12 @@
   </div>
 </main>
 <div class="nn-ad nn-ad-bottom" data-key="880492cdc7920a95973ba7a1f19cec1b" data-w="300" data-h="250"><div class="nn-ad-label">Advertisement</div><a class="nn-house" href="../calculators.html"><strong>Loan Estimates — your loan answer in seconds</strong><span>Payments, affordability &amp; payoff snapshots. No signup, ever →</span></a></div>
-<section class="related-tools">
+<div class="card nn-use-cta">
+     <h2>Ready to run your numbers?</h2>
+     <p>The calculator itself lives on the landing page — open it there and it is ready in the module, sized to fit your screen with no scrolling through a long page to find the form.</p>
+     <p><a class="btn" href="../index.html?use=tools/home-affordability-calculator.html">Open the Home Affordability Calculator &rarr;</a></p>
+   </div>
+   <section class="related-tools">
   <h2>Related tools</h2>
   <ul>
     <li><a href="mortgage-calculator.html">Mortgage Payment Calculator</a></li>
@@ -223,46 +200,7 @@
   </ul>
 </section>
 <footer class="site-footer"><div class="wrap"><div>© 2026 Loan Estimates</div><div><a href="../terms.html">Terms</a> · <a href="../privacy.html">Privacy</a> · <a href="../index.html">All tools</a> · <a href="../calculators.html">Calculators</a> · <a href="../embed.html">Embed</a> · <a href="../partnerships.html">Partnerships</a> · <a href="../creator-roi-calculators.html">Creator ROI</a></div></div></footer>
-<script>
-function fmt(n){return n.toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0});}
-function calc(){
-  const inc=(+document.getElementById('inc').value||0)/12,
-        debt=+document.getElementById('debt').value||0,
-        down=+document.getElementById('down').value||0,
-        r=(+document.getElementById('rate').value||0)/100/12,
-        n=(+document.getElementById('term').value||30)*12,
-        ti=(+document.getElementById('ti').value||0)/12;
-  const cap28=inc*0.28, cap36=inc*0.36-debt;
-  const maxPay=Math.max(Math.min(cap28,cap36)-ti,0);
-  const pv=r>0?(1-Math.pow(1+r,-n))/r:n;
-  const loan=maxPay*pv, price=loan+down;
-  document.getElementById('rPrice').textContent=fmt(price);
-  document.getElementById('rPay').textContent=fmt(maxPay+ti);
-  document.getElementById('rRule').textContent=cap28<cap36?'28% housing rule':'36% total-debt rule';
-  document.getElementById('rLoan').textContent=fmt(loan);
-  document.getElementById('rDown').textContent=fmt(down);
-  document.getElementById('verdict').textContent='The '+(cap28<cap36?'28% housing rule':'36% total-debt rule')+' is the limit here: it leaves '+fmt(maxPay)+' a month for principal and interest after tax and insurance, which carries a '+fmt(loan)+' loan — a '+fmt(price)+' home with your '+fmt(down)+' down.';
-  const head=Math.max(inc-(debt+ti+maxPay),0);
-  sigSet(sigCompHTML('Where a month of gross income goes',[{label:'Existing debts',value:debt,cls:'s-b'},{label:'Tax + insurance',value:ti,cls:'s-c'},{label:'Mortgage principal & interest room',value:maxPay,cls:'s-a'},{label:'Everything else',value:head,cls:'s-d'}]));
-  document.getElementById('results').classList.add('show');
-}
-function live(){document.querySelectorAll('.nn-calc-card input,.nn-calc-card select,.nn-calc-card textarea').forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});}
-live(); calc();
 
-/*NN-P2-HELPERS — signature renderers + scenario pin (polish wave P2)*/
-function sigSlotBody(){var s=document.querySelector('[data-nn-signature]');return s?s.querySelector('.nn-sig-body'):null;}
-function sigSet(html){var b=sigSlotBody();if(b)b.innerHTML=html;}
-function sigMoney(v){return '$'+Math.round(v).toLocaleString('en-US');}
-function sigCompInner(parts){
-  var tot=0,i;for(i=0;i<parts.length;i++)tot+=Math.max(parts[i].value,0);
-  if(tot<=0)return '';
-  var bar='',leg='';
-  for(i=0;i<parts.length;i++){var p=parts[i];if(p.value<=0)continue;
-    bar+='<span class="sig-seg '+p.cls+'" style="width:'+(p.value/tot*100).toFixed(2)+'%"></span>';
-    leg+='<div class="sig-leg-row"><span class="sig-dot '+p.cls+'"></span><span class="sig-leg-label">'+p.label+'</span><strong>'+sigMoney(p.value)+' \u00b7 '+Math.round(p.value/tot*100)+'%</strong></div>';}
-  return '<div class="sig-comp">'+bar+'</div>'+leg;
-}
-function sigCompHTML(title,parts){var inner=sigCompInner(parts);return inner?'<div class="sig-block"><div class="sig-title">'+title+'</div>'+inner+'</div>':'';}</script>
 <script src="../assets/ads.js"></script>
 <script src="../assets/track.js"></script>
 <script src="../assets/nn-tools.js"></script>
