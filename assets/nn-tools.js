@@ -1106,7 +1106,7 @@
       if (b > max) max = b;
     }
     if (!max) return;
-    var h = Math.round(max) + 4;
+    var h = Math.round(max) + 30;
     if (h !== last) { last = h; window.parent.postMessage({ nnEmbedHeight: h }, '*'); }
   }
   window.addEventListener('load', post);

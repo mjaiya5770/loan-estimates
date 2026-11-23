@@ -1929,3 +1929,13 @@ html.nn-embed .results .big{font-size:2.1rem}
 
 /* NN-FIT13 (2026-11-22): swap scroll lands the module under the sticky nav, not beneath it */
 #heroCalc{scroll-margin-top:76px}
+/* NN-FIT14 (2026-11-22): signature text readable on the dark results panel —
+   explicit light palette (the old --ink/--muted legend colours were
+   near-invisible on the panel). */
+.nn-signature{color:#e8f2ec}
+.nn-signature .sig-title,.nn-signature .nn-sig-title{color:#fff}
+.nn-signature .sig-leg-row{color:#cfe0d8}
+.nn-signature .sig-leg-label{color:#f2f8f4}
+.nn-signature .sig-leg-row strong{color:#fff}
+.nn-signature .sig-delta{color:#ffd98a}
+.nn-signature .sig-note{color:#cfe0d8}
