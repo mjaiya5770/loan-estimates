@@ -1115,3 +1115,39 @@
   setInterval(post, 900);
   post();
 } catch(e){} })();
+
+/* NN-HZ (2026-11-23): horizontal layout in embed mode — form on the left,
+   results on the right, so the calculator uses the module's width instead
+   of stacking everything vertically. Narrow frames keep the stack. */
+(function(){ try {
+  if (!document.documentElement.classList.contains('nn-embed')) return;
+  function hz(){
+    var card = document.querySelector('.nn-calc-card');
+    if (!card || card.querySelector('.hz-grid')) return;
+    var res = card.querySelector('#results, .results');
+    if (!res) return;
+    if (res.querySelector('.inv-editor, .inv-preview, .keypad')) return;
+    var form = document.createElement('div'); form.className = 'hz-form';
+    var kids = Array.prototype.slice.call(card.childNodes), i, node, moved = false;
+    for (i = 0; i < kids.length; i++) {
+      node = kids[i];
+      if (node === res) break;
+      if (node.nodeType === 1 && (node.tagName === 'H2' || node.classList.contains('nn-ad'))) continue;
+      form.appendChild(node); moved = true;
+    }
+    if (!moved) return;
+    var grid = document.createElement('div'); grid.className = 'hz-grid';
+    var side = document.createElement('div'); side.className = 'hz-side';
+    card.insertBefore(grid, res);
+    grid.appendChild(form); grid.appendChild(side);
+    side.appendChild(res);
+    card.classList.add('hz-on');
+    var tables = res.querySelectorAll('table'), t, wrap;
+    for (t = 0; t < tables.length; t++) {
+      wrap = document.createElement('div'); wrap.className = 'hz-tbl';
+      tables[t].parentNode.insertBefore(wrap, tables[t]); wrap.appendChild(tables[t]);
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', hz);
+  else hz();
+} catch(e){} })();
